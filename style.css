@@ -1,0 +1,84 @@
+/* Write your styles here  */
+
+body {
+
+}
+#header{
+  text-align: center;
+}
+#doctors{
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4,280px);
+  margin: auto;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 50px;
+  gap: 10px;
+}
+#doctors > div{
+  padding-bottom: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#doctors img{
+  width: 100%; 
+}
+#doctors h6{
+ margin-top: -5px;
+}
+#doctors p{
+  margin-top: -5px;
+}
+#doctors button{
+  border-radius: 12px;
+  margin-top: 20px;
+}
+#doctors button:nth-child(5){
+  height: 35px;
+  margin-right: 60px;
+  width: 100px;
+  border: none;
+  color: rgba(86, 170, 170, 0.821);
+  
+}
+#doctors button:last-child{
+  height: 35px;
+  margin-left: 0px;
+  width: 100px;
+  background-color: rgb(255, 55, 55);
+  border: none;
+  color: white;
+}
+#service{
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(3,300px);
+  margin: auto;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 50px;
+  gap: 40px ;
+  height: 400px;
+
+}
+
+/* keep media queries at the bottom */
+/* Medium screens */
+@media all and (min-width: 451px) and (max-width: 750px) {
+  #doctors{
+    grid-template-columns: repeat(2,280px);
+  }
+  #service{
+    grid-template-columns: repeat(2,300px);
+    margin-left: 50px;
+  }
+}
+/* Small screens */
+@media all and (min-width: 100px) and (max-width: 450px) {
+  #doctors{
+    grid-template-columns: repeat(1,280px);
+  }
+  #service{
+    grid-template-columns: repeat(1,300px);
+  }
+}
